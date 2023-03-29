@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- EN ESTE PEQUEÑO EJEMPLO, VEMOS COMO CARGAR LAS LIBRERIAS DE REACJ A UN ARCHIVO NORMAL DE HTML-->
+        <!-- Cargar React-->
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>          <!-- React-->
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>  <!-- React Dom-->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>                           <!--Cargamos babel-->
+
+        <title>ReactApp in html</title>
+    </head>
+
+    <body>
+
+        <div id="root">
+
+        </div>
+
+        <!--Babel lo que hace es traducir un código moderno a un código que entienda cualquier navegador-->
+        <script type="text/babel">
+
+            const divRoot = document.querySelector('#root');
+
+            const nombre = 'Goku';
+            const h1Tag = <h1>Hola, soy { nombre}!!!</h1>;       //esto es jsx (javascrip + xml), al poner entre llaves {}, se puede poner código js
+
+            ReactDOM.render( h1Tag, divRoot);
+
+        </script>
+    </body>
+</html>
