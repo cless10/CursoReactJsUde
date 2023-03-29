@@ -1,0 +1,6 @@
+https://developer.mozilla.org/
+https://developer.mozilla.org/es/docs/Web
+https://developer.mozilla.org/es/docs/Web/JavaScript
+
+JavaScript
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/
